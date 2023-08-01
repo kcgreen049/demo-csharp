@@ -1,0 +1,11 @@
+on:
+  pull_request:
+  push:
+    paths:
+      - "v1"
+    branches:
+      - main
+
+env:
+  SAUCE_USERNAME: ${{secrets.SAUCE_USERNAME}}
+  SAUCE_ACCESS_KEY: ${{secrets.SAUCE_ACCESS_KEY}}
